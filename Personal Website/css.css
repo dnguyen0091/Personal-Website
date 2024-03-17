@@ -1,0 +1,210 @@
+*
+{
+    /*font*/
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    /*backgound color*/
+    background: #080808;
+    color: #fff;
+
+}
+#header
+{
+    /*header image*/
+    width: 100%;
+    height:100vh;
+    background-image: url(pic/10years.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container
+{
+    /*Indentation*/
+    padding: 10px 10%;
+}
+
+nav
+{
+    /*brings navitems to the top-right*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+
+/*class within hmtl file*/
+.logo
+{
+    /*logo size*/
+    width: 140px
+}
+
+/*calls through function path*/
+nav ul li
+{
+    /*horizontally aligned nav items*/
+    display:inline-block;
+    list-style:none;
+    margin: 10px 20px;
+}
+
+nav ul li a
+{
+    /*nav item color*/
+    color: #a84090;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: .5s;
+    position: relative;
+}
+
+nav ul li a::after
+{
+    /*underlined nav items*/
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #e615a0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a:hover::after
+{
+    /*hovered nav items cool affect*/
+    width: 100%;
+    transition: .5s;
+}
+
+.header-text
+{
+    /*<P> text size*/
+    color:#a84090;
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1
+{
+    /*h1 text size*/
+    color:#a84090;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/*using span can change the color of some desired phrases*/
+
+/*About*/
+
+#about
+{
+    /*moves contents down 80px and changes font color*/
+    padding: 80px 0;
+    color:aquamarine;
+}
+
+.row
+{
+    /*aligns content side by side*/
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1
+{
+    /*dictates column size*/
+    flex-basis: 45%;
+}
+
+.about-col-1 img
+{
+    /*image size*/
+    width:100%;
+    /*rounds off the corners of image*/
+    border-radius: 10px;
+}
+
+.about-col-2
+{
+    /*dictates column size*/
+    flex-basis: 50%;
+    /*aligns text to the left*/
+    
+}
+.about-col-2 h1
+{
+    /*h1 text size*/
+    font-size: 50px;
+    /*thickness of text*/
+    font-weight: 700;
+    /*margin between text and next element*/
+    margin-bottom: 20px;
+
+}
+.about-col-2 p
+{
+    /*text size*/
+
+    font-size: 30px;
+}
+
+/*tabs*/
+.AboutTabs
+{
+    display:flex;
+    /*moves tabs down 80px*/
+    padding: 80px 0 40px;
+    color:aquamarine;
+}
+
+.TabLink
+{
+    /*aligns tabs side by side*/
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.TabLink a
+{
+    /*gives tabs color and gives transition like for nav items*/
+    color: #a84090;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: .5s;
+    position: relative;
+}
+
+.TabLink a::after
+{
+    /*underlines tabs*/
+    content:'';
+    width: 50%;
+    height: 3px;
+    background: #e615a0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+.TabLink a:hover::after
+{
+    /*hovered tabs cool affect*/
+    width: 100%;
+    transition: .5s;
+}
